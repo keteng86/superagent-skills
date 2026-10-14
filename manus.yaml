@@ -1,0 +1,406 @@
+# manus.yaml — SUPERAGENT v7 skill manifest
+# One entry per skill. `file` is relative to this archive root.
+# Load the file and follow it; `keywords` are the trigger words that should
+# select it. `dispatched_by` = playbooks routed from a hub skill (don't load
+# standalone). `merged_from` = consolidated from older skill ids.
+schema: superagent-skill-manifest/1
+source: SUPERAGENT v7 IRONCLAW (https://github.com/omacom or local install)
+generated: 2026-10-14
+skills:
+  - id: admin-only-missing-validation
+    file: "skills/admin-only-missing-validation.md"
+    title: "admin-only-missing-validation"
+    keywords: "Detect and report admin-only functions that skip input validation — address(0), bounds, duplicates — even when other functions in the same contract validate"
+    size: 130 lines / 4856 bytes
+  - id: drainer-analysis
+    file: "skills/drainer-analysis.md"
+    title: "drainer-analysis"
+    keywords: "Analyze wallet drainer contracts and patterns — bytecode, approvals, Permit2, CREATE2, DELEGATECALL"
+    size: 31 lines / 1077 bytes
+  - id: m0
+    file: "skills/m0.md"
+    title: "Skill Registry & Reflection Loop"
+    keywords: "skill registry, routing, reflection loop, which skill, daftar skill, skill map"
+    size: 153 lines / 12120 bytes
+  - id: m14
+    file: "skills/m14.md"
+    title: "Daily Assistant: Briefing & Alerts (NEW in v4.0)"
+    keywords: "briefing, ringkasan harian, alert, kabarin kalau, pantau harga, alarm, daily, notif"
+    size: 91 lines / 3457 bytes
+    related: "Related: For watchdog/process-monitoring, vault/snippet storage, voice/screenshot input, and inbox triage → see m15 (Daily Assistant II)"
+  - id: m15
+    file: "skills/m15.md"
+    title: "Daily Assistant II: Watchdog, Vault, Multimodal, Triage (NEW in v4.0)"
+    keywords: "watchdog, restart kalau mati, simpen alamat, macro, voice note, screenshot, triage"
+    size: 79 lines / 3779 bytes
+    related: "Related: For daily briefing engine & alert engine (price, gas, wallet, claim-window alerts) → see m14 (Daily Assistant I)"
+  - id: m28
+    file: "skills/m28.md"
+    title: "Copywriting, Writing Mastery & Content Research/Analytics (v4.2 consolidated)"
+    keywords: "copywriting, AIDA, PAS, CHEF, SEO writing, storytelling, headline, riset konten, trend, social listening, A/B caption, content pipeline"
+    size: 157 lines / 7632 bytes
+    merged_from: "MERGED: m28 (copywriting) + m29 (content research/analytics/pipeline) — July 2026"
+  - id: m3
+    file: "skills/m3.md"
+    title: "Content Creation, Strategy & Signal Amplification (v4.2 consolidated)"
+    keywords: "content creation, content strategy, viral, hook, caption, carousel, reels, platform adapter, scroll-stopper, konten"
+    size: 289 lines / 9188 bytes
+    merged_from: "MERGED: m3 (creation) + m27 (strategy/social media) — July 2026"
+  - id: m32
+    file: "skills/m32.md"
+    title: "CTF / Whitehat Toolkit"
+    keywords: "CTF, capture the flag, whitehat, bug bounty, decode flag, crypto challenge, caesar, xor cipher, hash identify, reverse, forensics challenge, HTB, THM, CTFd, writeup"
+    size: 96 lines / 5399 bytes
+  - id: m43
+    file: "skills/m43.md"
+    title: "CTF Web Exploitation"
+    keywords: "CTF web, web challenge, SQLi, SSTI, SSRF, IDOR, XXE, deserialization, JWT, prototype pollution, race condition, web exploit, dispatched by m32 web"
+    size: 52 lines / 2954 bytes
+  - id: m44
+    file: "skills/m44.md"
+    title: "CTF Binary Exploitation (pwn)"
+    keywords: "CTF pwn, buffer overflow, ret2win, ret2libc, format string, heap, ROP, pwntools, GOT leak, dispatched by m32 pwn"
+    size: 50 lines / 2632 bytes
+  - id: m45
+    file: "skills/m45.md"
+    title: "CTF Reverse Engineering"
+    keywords: "CTF reverse, reversing, rev challenge, angr, symbolic execution, Ghidra, radare2, decompile, keygen, deobfuscation, dispatched by m32 reverse"
+    size: 59 lines / 2679 bytes
+  - id: m46
+    file: "skills/m46.md"
+    title: "CTF Cryptography"
+    keywords: "CTF crypto, RSA attack, Wiener, Hastad, common modulus, Coppersmith, padding oracle, nonce reuse, LCG, Mersenne twister, hash length extension, ECDSA, dispatched by m32 crypto"
+    size: 51 lines / 2884 bytes
+  - id: m47
+    file: "skills/m47.md"
+    title: "CTF Forensics & Stego"
+    keywords: "CTF forensics, stego, steganography, pcap, memory dump, volatility, binwalk, carving, exiftool, zsteg, steghide, file identification, USB keystroke, DNS exfil, dispatched by m32 forensics"
+    size: 70 lines / 2759 bytes
+  - id: m48
+    file: "skills/m48.md"
+    title: "CTF Prompt-Injection / LLM Red-Teaming"
+    keywords: "prompt injection, LLM red-team, jailbreak challenge, Gandalf, Lakera, Mosscap, OWASP LLM01, AI challenge, extract system prompt, leak secret from LLM, dispatched by m32 AI/LLM"
+    size: 82 lines / 6266 bytes
+  - id: sk0
+    file: "skills/sk0.md"
+    title: "Skill Registry & Reflection Loop (SUPERAGENT V7)"
+    keywords: "sk0"
+    size: 152 lines / 12092 bytes
+  - id: sk1
+    file: "skills/sk1.md"
+    title: "Value Generation & Monetization (SUPERAGENT V7)"
+    keywords: "monetize, pricing, jual, cuan, business, income, funnel"
+    size: 115 lines / 3521 bytes
+  - id: sk10
+    file: "skills/sk10.md"
+    title: "Web3 / On-Chain Operations (SUPERAGENT V7)"
+    keywords: "wallet, airdrop, on-chain, RPC, ethers, crypto, web3, token, blockchain, ETH"
+    size: 373 lines / 10446 bytes
+  - id: sk11
+    file: "skills/sk11.md"
+    title: "Security Audit & Review (SUPERAGENT V7)"
+    keywords: "audit, vulnerability, exploit, scam check, security, review, safe, malicious"
+    size: 295 lines / 8972 bytes
+  - id: sk12
+    file: "skills/sk12.md"
+    title: "Batch / Parallel Operations (SUPERAGENT V7)"
+    keywords: "batch, parallel, bulk, mass, queue, worker, concurrent, throughput"
+    size: 225 lines / 5490 bytes
+  - id: sk13
+    file: "skills/sk13.md"
+    title: "Universal NFT Minter (SUPERAGENT V7)"
+    keywords: "mint, opensea, manifold, zora, seadrop, NFT, claim, drop, collection"
+    size: 402 lines / 14226 bytes
+  - id: sk14
+    file: "skills/sk14.md"
+    title: "Daily Assistant: Briefing & Alerts (SUPERAGENT V7)"
+    keywords: "briefing, ringkasan harian, alert, kabarin kalau, pantau harga, alarm"
+    size: 89 lines / 3413 bytes
+  - id: sk15
+    file: "skills/sk15.md"
+    title: "Daily Assistant II: Watchdog/Vault/Triage (SUPERAGENT V7)"
+    keywords: "watchdog, restart kalau mati, simpen alamat, macro, voice note, screenshot, triage"
+    size: 77 lines / 3756 bytes
+  - id: sk16
+    file: "skills/sk16.md"
+    title: "Software Engineering & Coding (SUPERAGENT V7)"
+    keywords: "coding, bikin app, backend, API, database, testing, fastapi, express, golang, rust"
+    size: 231 lines / 7428 bytes
+  - id: sk17
+    file: "skills/sk17.md"
+    title: "Power Pack: Planner/Swarm/Automation (SUPERAGENT V7)"
+    keywords: "rencanain, workflow, otomatis kalau, backtest, dashboard, swarm, voice mode"
+    size: 103 lines / 4155 bytes
+  - id: sk18
+    file: "skills/sk18.md"
+    title: "Creative & Media Generation (SUPERAGENT V7)"
+    keywords: "comfyui, manim, excalidraw, ascii video, slide, design system, animasi, diagram"
+    size: 148 lines / 7065 bytes
+  - id: sk19
+    file: "skills/sk19.md"
+    title: "Desktop & Physical Control (SUPERAGENT V7)"
+    keywords: "isaac sim, omniverse, robot, macos control, applescript, scene, usd"
+    size: 152 lines / 7761 bytes
+  - id: sk2
+    file: "skills/sk2.md"
+    title: "Infrastructure & Deployment (SUPERAGENT V7)"
+    keywords: "VPS, deploy, SSH, nginx, docker, systemd, server, linux, bash, sysadmin"
+    size: 332 lines / 8234 bytes
+  - id: sk20
+    file: "skills/sk20.md"
+    title: "Humanizer & Brand Voice (SUPERAGENT V7)"
+    keywords: "humanizer, brand voice, AI tone, natural, manusiawi, rewrite, nada, voice profile"
+    size: 66 lines / 3605 bytes
+  - id: sk21
+    file: "skills/sk21.md"
+    title: "Enterprise & Defensive Ops (SUPERAGENT V7)"
+    keywords: "KQL, azure, log analytics, HIDS, auto firewall, intrusion, kusto, sentinel"
+    size: 79 lines / 3566 bytes
+  - id: sk22
+    file: "skills/sk22.md"
+    title: "Scientific & Deep Research (SUPERAGENT V7)"
+    keywords: "deep research, AI-Q, tooluniverse, hipotesis, citations, riset ilmiah, eksperimen"
+    size: 92 lines / 5044 bytes
+  - id: sk23
+    file: "skills/sk23.md"
+    title: "Executive Function & Neurodivergent (SUPERAGENT V7)"
+    keywords: "task breakdown, executive function, ADHD, overwhelmed, fokus, context switch, prioritas"
+    size: 63 lines / 3077 bytes
+  - id: sk24
+    file: "skills/sk24.md"
+    title: "MCP-Builder & Prompt Engineering (SUPERAGENT V7)"
+    keywords: "MCP server, bikin MCP, prompt engineering, fix prompt, FastMCP, tool schema"
+    size: 62 lines / 3030 bytes
+  - id: sk25
+    file: "skills/sk25.md"
+    title: "Compliance, CI/CD & Code Migration (SUPERAGENT V7)"
+    keywords: "compliance, regulasi, GDPR, CI/CD, pipeline, code migration, SOC2, audit regulasi"
+    size: 85 lines / 3955 bytes
+  - id: sk26
+    file: "skills/sk26.md"
+    title: "Product & Spec Workflows (SUPERAGENT V7)"
+    keywords: "PRD, to-issues, grill me, spec, user story, TDD, product requirement, breakdown task"
+    size: 70 lines / 3362 bytes
+  - id: sk27
+    file: "skills/sk27.md"
+    title: "Content Strategy & Social Media (SUPERAGENT V7)"
+    keywords: "content calendar, content strategy, content pillar, carousel, reels, platform adapter, social media"
+    size: 92 lines / 4011 bytes
+  - id: sk28
+    file: "skills/sk28.md"
+    title: "Copywriting & Writing Mastery (SUPERAGENT V7)"
+    keywords: "AIDA, PAS, CHEF, copywriting framework, SEO writing, storytelling, headline, copy"
+    size: 70 lines / 3367 bytes
+  - id: sk29
+    file: "skills/sk29.md"
+    title: "Content Research & Analytics (SUPERAGENT V7)"
+    keywords: "competitor analysis, trend research, social listening, audience insight, content pipeline, engagement"
+    size: 82 lines / 4241 bytes
+  - id: sk3
+    file: "skills/sk3.md"
+    title: "Content Creation & Distribution (SUPERAGENT V7)"
+    keywords: "viral, hook, caption, thread, naskah, content, post, copywriting, konten"
+    size: 209 lines / 5324 bytes
+  - id: sk30
+    file: "skills/sk30.md"
+    title: "Client Revenue Engine (SUPERAGENT V7)"
+    keywords: "client revenue, garapan, harvest, scrape API, anti-browser, parse curl, mass akun"
+    size: 66 lines / 3643 bytes
+  - id: sk31
+    file: "skills/sk31.md"
+    title: "Airdrop Intelligence (SUPERAGENT V7)"
+    keywords: "eligibility airdrop, skor airdrop, layak airdrop, sybil, claim window, jadwal claim, exit plan"
+    size: 60 lines / 3667 bytes
+  - id: sk32
+    file: "skills/sk32.md"
+    title: "CTF / Whitehat Toolkit (SUPERAGENT V7)"
+    keywords: "CTF, capture the flag, whitehat, bug bounty, decode flag, crypto challenge, caesar, xor cipher"
+    size: 95 lines / 5383 bytes
+  - id: sk33
+    file: "skills/sk33.md"
+    title: "Pre-TGE Alpha Radar (SUPERAGENT V7)"
+    keywords: "alpha airdrop, pre-TGE, points program, testnet incentivized, radar airdrop, proyek belum ada token"
+    size: 38 lines / 2112 bytes
+  - id: sk34
+    file: "skills/sk34.md"
+    title: "Farming Portfolio & ROI Optimizer (SUPERAGENT V7)"
+    keywords: "ROI farming, portfolio airdrop, untung rugi farming, gas vs hasil, farm mana lanjut"
+    size: 38 lines / 2000 bytes
+  - id: sk35
+    file: "skills/sk35.md"
+    title: "Auto Guide Studio (SUPERAGENT V7)"
+    keywords: "panduan airdrop, tutorial airdrop, guide step by step, artikel airdrop, naskah panduan"
+    size: 38 lines / 1984 bytes
+  - id: sk36
+    file: "skills/sk36.md"
+    title: "Tokenomics & Unlock Pressure Engine (SUPERAGENT V7)"
+    keywords: "unlock token, vesting, cliff, kalender unlock, sell pressure, tokenomics, jual sebelum unlock"
+    size: 40 lines / 2091 bytes
+  - id: sk37
+    file: "skills/sk37.md"
+    title: "Anti-Scam Sentinel (SUPERAGENT V7)"
+    keywords: "situs palsu, domain palsu, typosquat, phishing airdrop, scam check, fake claim, drainer"
+    size: 38 lines / 2172 bytes
+  - id: sk38
+    file: "skills/sk38.md"
+    title: "Contract-Change & Claim-Address Watcher (SUPERAGENT V7)"
+    keywords: "kontrak berubah, proxy upgrade, claim address, aman claim gak, watch kontrak"
+    size: 42 lines / 2385 bytes
+  - id: sk39
+    file: "skills/sk39.md"
+    title: "Community Intelligence (SUPERAGENT V7)"
+    keywords: "topik trending komunitas, sentimen komunitas, FUD, analisis chat, pertanyaan member"
+    size: 38 lines / 1978 bytes
+  - id: sk4
+    file: "skills/sk4.md"
+    title: "Process Orchestration & Bots (SUPERAGENT V7)"
+    keywords: "telegram bot, cron, webhook, n8n, automate, bot, otomatis, schedule, jadwal"
+    size: 332 lines / 9089 bytes
+  - id: sk40
+    file: "skills/sk40.md"
+    title: "Omni-Repurpose Engine (SUPERAGENT V7)"
+    keywords: "repurpose konten, ubah jadi thread, carousel IG, multi platform, script tiktok, distribusi konten"
+    size: 35 lines / 2020 bytes
+  - id: sk41
+    file: "skills/sk41.md"
+    title: "Video Script-to-Screen Pipeline (SUPERAGENT V7)"
+    keywords: "bikin video, script video, storyboard, voiceover, subtitle, tiktok video, reels, naskah video"
+    size: 39 lines / 2003 bytes
+  - id: sk42
+    file: "skills/sk42.md"
+    title: "Hook A/B Lab (SUPERAGENT V7)"
+    keywords: "hook, judul konten, headline, a/b test judul, stop scroll, opening line, prediksi engagement"
+    size: 35 lines / 1847 bytes
+  - id: sk43
+    file: "skills/sk43.md"
+    title: "CTF Web Exploitation (SUPERAGENT V7)"
+    keywords: "CTF web, SQLi, SSTI, SSRF, IDOR, XXE, JWT, deserialization, prototype pollution, web exploit"
+    size: 50 lines / 2848 bytes
+  - id: sk44
+    file: "skills/sk44.md"
+    title: "CTF Binary Exploitation / Pwn (SUPERAGENT V7)"
+    keywords: "CTF pwn, binary exploitation, buffer overflow, ret2win, ret2libc, format string, heap, ROP, pwntools"
+    size: 48 lines / 2564 bytes
+  - id: sk45
+    file: "skills/sk45.md"
+    title: "CTF Reverse Engineering (SUPERAGENT V7)"
+    keywords: "CTF reverse, reversing, angr, symbolic execution, Ghidra, radare2, decompile, keygen"
+    size: 57 lines / 2567 bytes
+  - id: sk46
+    file: "skills/sk46.md"
+    title: "CTF Cryptography (SUPERAGENT V7)"
+    keywords: "CTF crypto, RSA attack, Wiener, Hastad, common modulus, Coppersmith, padding oracle, nonce reuse"
+    size: 49 lines / 2748 bytes
+  - id: sk47
+    file: "skills/sk47.md"
+    title: "CTF Forensics & Stego (SUPERAGENT V7)"
+    keywords: "CTF forensics, stego, pcap, memory dump, volatility, binwalk, carving, exiftool, zsteg, steghide"
+    size: 68 lines / 2615 bytes
+  - id: sk48
+    file: "skills/sk48.md"
+    title: "CTF Prompt-Injection/LLM Red-Team (SUPERAGENT V7)"
+    keywords: "CTF prompt injection, LLM red-team, jailbreak, Gandalf, Lakera, Mosscap, OWASP LLM01"
+    size: 80 lines / 6118 bytes
+  - id: sk49
+    file: "skills/sk49.md"
+    title: "Team Orchestration & Multi-User Ops (SUPERAGENT V7)"
+    keywords: "team, tim, orchestration, orkestrasi, multi-user, multi-client, multi-operator, delegasi"
+    size: 378 lines / 12898 bytes
+  - id: sk5
+    file: "skills/sk5.md"
+    title: "Data Transformation & Insight (SUPERAGENT V7)"
+    keywords: "spreadsheet, excel, csv, dataset, snapshot, data, analytics, report, laporan"
+    size: 173 lines / 5018 bytes
+  - id: sk50
+    file: "skills/sk50.md"
+    title: "Autonomous Monetization Engine (SUPERAGENT V7)"
+    keywords: "monetize otomatis, auto revenue, passive income, auto jual, auto pricing, dynamic pricing"
+    size: 463 lines / 14716 bytes
+  - id: sk51
+    file: "skills/sk51.md"
+    title: "Offensive Security & Red-Team Ops (SUPERAGENT V7)"
+    keywords: "red team, pentest, offensive, exploit dev, post-exploit, C2, payload, phishing campaign, adversary"
+    size: 719 lines / 24962 bytes
+  - id: sk52
+    file: "skills/sk52.md"
+    title: "Self-Audit & System Refinement (SUPERAGENT V7)"
+    keywords: "self-audit, audit diri, system check, health check, refinement, perbaikan sistem"
+    size: 92 lines / 2726 bytes
+  - id: sk53
+    file: "skills/sk53.md"
+    title: "Deep Decomposition & Strategy (SUPERAGENT V7)"
+    keywords: "decompose, breakdown, strategy, strategi, deep analysis, dekomposisi, pecah masalah"
+    size: 100 lines / 2706 bytes
+  - id: sk54
+    file: "skills/sk54.md"
+    title: "Fault Diagnosis & Resolution (SUPERAGENT V7)"
+    keywords: "debug, gak jalan, error, bug, troubleshoot, diagnosis, resolution, perbaiki"
+    size: 113 lines / 4506 bytes
+  - id: sk55
+    file: "skills/sk55.md"
+    title: "Self-Improvement & Autonomous Fix (SUPERAGENT V7)"
+    keywords: "self-improvement, self-fix, auto-improve, auto-patch, upgrade diri, perbaiki sendiri"
+    size: 120 lines / 5151 bytes
+  - id: sk56
+    file: "skills/sk56.md"
+    title: "Agentic Eval & Self-Critique (SUPERAGENT V7)"
+    keywords: "eval, evaluation, critique, self-critique, review output, critique response, audit jawaban"
+    size: 115 lines / 5522 bytes
+  - id: sk57
+    file: "skills/sk57.md"
+    title: "Systematic Debug & Auto-Debug (SUPERAGENT V7)"
+    keywords: "systematic debug, auto-debug, root cause, trace, stack trace, step through, isolate bug"
+    size: 82 lines / 3715 bytes
+  - id: sk58
+    file: "skills/sk58.md"
+    title: "Problem Shaping & Decision Support (SUPERAGENT V7)"
+    keywords: "problem shaping, decision support, framing, brainstorm, prioritas, keputusan, tradeoff, ambiguitas"
+    size: 78 lines / 4160 bytes
+  - id: sk59
+    file: "skills/sk59.md"
+    title: "Multi-Provider AI Gateway & Proxy Pool (SUPERAGENT V7)"
+    keywords: "proxy, gateway, Cloudflare, Workers AI, model pool, load balancer, account rotation, neuron, cf-proxy, LLM routing, multi-provider, AI gateway, model fallback, free LLM, Workers AI gateway, reverse proxy AI"
+    size: 401 lines / 15304 bytes
+  - id: sk6
+    file: "skills/sk6.md"
+    title: "Protocol Binding & Service Bridge (SUPERAGENT V7)"
+    keywords: "API, REST, webhook, midtrans, integrasi, endpoint, SDK, integration"
+    size: 287 lines / 7783 bytes
+  - id: sk7
+    file: "skills/sk7.md"
+    title: "Inference Systems & AI Builder (SUPERAGENT V7)"
+    keywords: "LLM, prompt, claude API, openrouter, add model, AI, agent, model, GPT"
+    size: 494 lines / 16226 bytes
+  - id: sk8
+    file: "skills/sk8.md"
+    title: "File & Artifact Production (SUPERAGENT V7)"
+    keywords: "PDF, DOCX, XLSX, PPTX, generate file, export, dokumen, file"
+    size: 233 lines / 5984 bytes
+  - id: sk9
+    file: "skills/sk9.md"
+    title: "Interface Construction (SUPERAGENT V7)"
+    keywords: "landing page, react, tailwind, frontend, website, UI, HTML, CSS"
+    size: 290 lines / 9537 bytes
+  - id: x1
+    file: "skills/x1.md"
+    title: "Self-Audit, System Refinement & Self-Improvement (v4.2 consolidated)"
+    keywords: "audit, improve system, review agent, upgrade brain, tune skill, self improve, belajar, makin pinter, auto fix, upgrade diri"
+    size: 199 lines / 8087 bytes
+    merged_from: "MERGED: x1 (self-audit) + x4 (self-improvement loop) — July 2026"
+  - id: x2
+    file: "skills/x2.md"
+    title: "Deep Strategy, Problem Shaping & Decision Support (v4.2 consolidated)"
+    keywords: "complex multi-step, strategy, architecture, \"help me think through\", tradeoff, \"should I\", roadmap, problem shaping, brainstorming, sign-off, framing, vague goal, uncertainty"
+    size: 165 lines / 6360 bytes
+    merged_from: "MERGED: x2 (deep decomposition/strategy) + x7 (problem shaping/decision support) — July 2026"
+  - id: x3
+    file: "skills/x3.md"
+    title: "Fault Diagnosis, Resolution & Systematic Debugging (v4.2 consolidated)"
+    keywords: "error, bug, not working, failed, debug, stack trace, \"kenapa\", \"kok gagal\", systematic debug, RCA, root cause, hypothesis, intermittent, reproduce"
+    size: 206 lines / 8561 bytes
+    merged_from: "MERGED: x3 (fault diagnosis) + x6 (systematic debug/auto-debug loop) — July 2026"
+  - id: x5
+    file: "skills/x5.md"
+    title: "Agentic Eval & Self-Critique (NEW in v4.1)"
+    keywords: "eval, self-critique, variance, konsistensi, flaky, ukur, regression, skeptik"
+    size: 94 lines / 4202 bytes
